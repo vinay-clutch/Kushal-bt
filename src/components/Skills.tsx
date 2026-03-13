@@ -8,9 +8,10 @@ import {
   ElectronicsChip,
   Database,
   Box,
-  InternetPages
+  Keyframe
 } from "iconoir-react";
 
+// Using Keyframe or Code as fallbacks for HTML/CSS icons to ensure stability
 const skillCategories = [
   {
     name: "Embedded & IoT",
@@ -28,7 +29,7 @@ const skillCategories = [
       { name: "Python", Icon: Code, color: "#3776AB" },
       { name: "JavaScript", Icon: Code, color: "#F7DF1E" },
       { name: "Tailwind CSS", Icon: Settings, color: "#06B6D4" },
-      { name: "HTML5", Icon: InternetPages, color: "#E34F26" },
+      { name: "HTML5", Icon: Code, color: "#E34F26" },
       { name: "CSS3", Icon: Code, color: "#1572B6" },
     ]
   }

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Silkscreen&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-pixel: 'Silkscreen', cursive;
+}
+
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body {
+  background-color: #000000 !important;
+  color: #ededed;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.pixel-font {
+  font-family: var(--font-pixel);
+}
+
+.glass-card {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: #050505;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
